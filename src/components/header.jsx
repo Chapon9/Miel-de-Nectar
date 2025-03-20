@@ -12,15 +12,15 @@ function Header() {
       </div>
       <nav>
         <ul className="nav-list mondrian-container">
-          <li className="lightgrayone"><a href="/panier">    
+          <li className="panier"><a href="/panier">    
           <div>
             <FaShoppingCart size={30} color="black" /> {/* You can adjust size and color */}
           </div></a></li>
-          <li className="lightgraytwo"><a href="/register">Register</a></li>
-          <li className="lightgraythree"><a href="/login">Login</a></li>
-          <li className="blue"><a href="/boutique">Boutique</a></li>
-          <li className="lightgrayfour"><a href="/info">Qui sommes-nous</a></li>
-          <li className="yellow"><a href="/contact">Contact</a></li>
+          <li className="register"><a href="/register">Register</a></li>
+          <li className="login"><a href="/login">Login</a></li>
+          <li className="boutique"><a href="/boutique">Boutique</a></li>
+          <li className="qui"><a href="/info">Qui sommes-nous</a></li>
+          <li className="contact"><a href="/contact">Contact</a></li>
         </ul>
       </nav>
 
