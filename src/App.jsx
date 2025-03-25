@@ -7,6 +7,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import Contact from './pages/contact';
 import Commande from './pages/commande';
+import User from './pages/user';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/commande" element={<Commande />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </Router>
   );
