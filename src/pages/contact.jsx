@@ -12,7 +12,7 @@ const Contact = () => {
       <Header />
       
       <div className="contact-container">
-        <h1>Contactez-nous</h1>
+        <p className="title">Contactez-nous</p>
   
         
         <div className="contact-methods">
@@ -20,9 +20,10 @@ const Contact = () => {
           
           <div className="contact-item">
             <FaFacebook className="contact-icon" />
+
             <div>
 
-              <p><a href="https://www.facebook.com/Rucher-de-Stoqueu" target="_blank" rel="noopener noreferrer">Rucher de Stoqueu</a></p>
+              <p className="via">Facebook <a href="https://www.facebook.com/Rucher-de-Stoqueu" target="_blank" rel="noopener noreferrer">Rucher de Stoqueu</a></p>
             </div>
           </div>
 
@@ -30,7 +31,7 @@ const Contact = () => {
             <FaEnvelope className="contact-icon" />
             <div>
 
-              <p>philippeneo@gmail.com</p>
+              <p className="via">philippeneo@gmail.com</p>
             </div>
           </div>
 
@@ -38,16 +39,14 @@ const Contact = () => {
             <FaPhone className="contact-icon" />
             <div>
 
-              <p>0475685201</p>
+              <p className="via">0475685201</p>
             </div>
           </div>
 
 
 
         </div>
-        <p className="contact-intro">
-          Nous serions ravis d’avoir de vos nouvelles! 
-        </p>
+
 
       </div>
 

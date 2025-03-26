@@ -1,38 +1,51 @@
 /* Ensure the body and html take up full height */
 html, body {
-  height: 100%;
+
   margin: 0; /* Remove default margin */
+  width: 100%;
 }
 
-/* Flex container for the whole page */
-body {
-  display: flex;
-  flex-direction: column;
-}
 
 /* Footer style */
 .honey-footer {
   background-color: #f8d14e;
-  padding: 0 20px;  /* Adjust padding if needed */
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;  /* Centers content vertically */
+
+  display: grid;
+  grid-template-columns: 
+    repeat(3, 1fr); /* Create 3 equal columns */
+ 
   height: 100px;
-  margin-top: auto;  /* Pushes the footer to the bottom */
+  width: 100%;
 }
 
-/* Set the logo size in the footer */
+/* Set the logo to align to the right of the grid */
+.honey-footer .logo {
+
+  justify-self: end; /* Align the logo to the right within its column */
+}
+
+/* Set the logo image properties */
 .honey-footer .logo img {
   width: 100px; /* Define the logo's width */
   height: auto; /* Adjust height automatically to maintain aspect ratio */
   object-fit: contain; /* Keeps the logo's aspect ratio intact */
 }
 
-/* Text inside the footer */
-.honey-footer p {
-  margin-top: 10px; /* Adjust margin if needed */
+
+
+.underlined {
+  text-decoration: underline;
 }
 
-  
+.address {
+  display: grid;             /* Make it a grid container */
+  justify-items: start;      /* Align grid items to the left */
+  text-align: left;          /* Align text inside the grid items */
+  padding-left: 10px;
+}
 
+.C.G.V {
+  display: grid;             /* Make it a grid container */
+
+  text-justify: end;  
+}

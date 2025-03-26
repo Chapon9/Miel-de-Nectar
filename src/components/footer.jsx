@@ -10,7 +10,17 @@ function Footer() {
       <div className="logo">
         <img src={logo} alt="Rucher de Stoqueu Logo" />
       </div>
-      <p>Où nous trouver?</p>
+      <div className="address">
+        <p class="underlined">Où nous trouver?</p>
+        <p>Rue du Hameau 45</p>
+        <p>4920 Aywaille</p>
+      </div>
+      <div className="C.G.V">
+        <p>Conditions générales de vente (C.G.V.)</p>
+        <p>Politique de confidentialité</p>
+        <p>Livraison</p>
+      </div>
+
     </footer>
   );
 }

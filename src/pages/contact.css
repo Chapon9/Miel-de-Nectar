@@ -12,6 +12,8 @@
     justify-content: center;  /* Centers everything horizontally */
     align-items: flex-start;  /* Align to the top */
     min-height: 100vh;
+    background-color: #fff7e6; /* Light honey color */
+
 
   }
   
@@ -19,48 +21,38 @@
   .contact-container {
     text-align: center;
 
+    background-color: #white; /* Light honey color */
 
-    padding: 40px;
-    margin-top: 30px;
+    padding: 60px;
+
   }
   
   /* Title of the contact page */
-  .contact-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+  .title {
+    font-size: 1.6rem;
     margin-bottom: 80px;
   }
   
-  /* Intro paragraph */
-  .contact-intro {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #555;
-    line-height: 1.6;
-  }
+
   
   /* Styling for each contact method */
   .contact-methods {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
+    margin: 0 auto;    /* Centers the element horizontally */
+
     margin-bottom: 30px;
   }
   
   .contact-item {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
+    margin-left: 31rem;    /* Centers the element horizontally */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+
+
   }
   
   .contact-icon {
     font-size: 2rem;
-    margin-right: 15px;
+    margin-right: 50px;
     color: #007bff;
   }
   
@@ -75,36 +67,8 @@
     color: #333;
   }
   
-  /* Call-to-action section */
-  .cta {
-    margin-top: 40px;
-  }
-  
-  .cta h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .cta p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #0056b3;
+  .via {
+    font-size: 2.5rem;
   }
   
   /* Responsive design for smaller screens */
@@ -113,12 +77,4 @@
       padding: 20px;
     }
   
-    .contact-intro {
-      font-size: 1rem;
-    }
-  
-    .cta h2 {
-      font-size: 1.5rem;
-    }
-  }
   
