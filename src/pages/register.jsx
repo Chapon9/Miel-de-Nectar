@@ -111,7 +111,9 @@ const Register = () => {
 
           {/* Google Login Section */}
           <div className="google-login">
-            <button className="google-login-btn">S'inscrire</button>
+          <button class="google-login-btn">
+            <span class="button-text">S'inscrire</span>
+          </button>
           </div>
         </div>
       </div>

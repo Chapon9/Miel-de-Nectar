@@ -20,12 +20,15 @@
   
   /* Title */
   .form-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-left: 28rem;
     margin-top: 50px;
-    color: #2d3748; /* Text color */
+ 
     margin-bottom: 1.5rem; /* Margin below the title */
+
+    font-size: 2rem;
+    color:#615252;
+    font-weight: bold;
+
+    text-align: center;
   }
   
   /* Field container for the input */
@@ -71,14 +74,16 @@
 .login-button {
   margin-left: 18rem;
   margin-top: 2rem;
-  border: none;
+
   padding: 12px;
-  font-size: 1rem;
-  background-color: #FFEE59;
-  color: #0DFB49;
+  font-size: 1.2rem;
+  color: #615252;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   padding-left: 20px;
   padding-right: 20px;
   font-weight: bold;
+  border-radius: 10%;
+  border-color: #FFC670;
+  border-width: 5px;
+
 }

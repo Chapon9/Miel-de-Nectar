@@ -21,7 +21,7 @@
   .contact-container {
     text-align: center;
 
-    background-color: #white; /* Light honey color */
+    background-color: white; /* Light honey color */
 
     padding: 60px;
 
@@ -29,8 +29,10 @@
   
   /* Title of the contact page */
   .title {
-    font-size: 1.6rem;
     margin-bottom: 80px;
+    font-size: 2rem;
+    color:#615252;
+    font-weight: bold;
   }
   
 
@@ -44,7 +46,7 @@
   
   .contact-item {
     display: flex;
-    margin-left: 31rem;    /* Centers the element horizontally */
+    margin-left: 30rem;    /* Centers the element horizontally */
     padding: 20px;
 
 
@@ -56,19 +58,11 @@
     color: #007bff;
   }
   
-  .contact-item h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
   
-  .contact-item p {
-    font-size: 1rem;
-    color: #333;
-  }
-  
+
   .via {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
+    color: #333;
   }
   
   /* Responsive design for smaller screens */
@@ -77,4 +71,4 @@
       padding: 20px;
     }
   
-  
+  }

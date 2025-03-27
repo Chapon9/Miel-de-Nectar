@@ -20,7 +20,9 @@
   /* Heading */
   .form-heading {
     font-size: 2rem;
-    color: #3c2a22;
+    color:#615252;
+    font-weight: bold;
+
     text-align: center;
     margin-bottom: 20px;
   }
@@ -70,18 +72,23 @@
   
   .google-login-btn {
     text-align: center;
-    border: none;
+
     padding: 12px;
-    font-size: 1rem;
-    font-weight: bold ;
-    background-color: #FFEE59;
-    color:#0DFB49;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    color: #FFC670;
+    border-color: #FFC670;
+    border-width: 5px;
+
 
     cursor: pointer;
-    transition: background-color 0.3s ease;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10%;
   }
+
+
   
   .google-login-btn:hover {
     background-color: #357ae8;

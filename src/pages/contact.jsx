@@ -39,7 +39,7 @@ const Contact = () => {
             <FaPhone className="contact-icon" />
             <div>
 
-              <p className="via">0475685201</p>
+              <p className="via">0032475685201</p>
             </div>
           </div>
 
