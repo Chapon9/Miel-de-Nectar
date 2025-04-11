@@ -1,58 +1,68 @@
-import React from 'react';
-import Header from '../components/header';  
-import Footer from '../components/footer';  
-import './contact.css'; // Importing the CSS file
 import { FaEnvelope } from 'react-icons/fa'; // Email icon from FontAwesome
 import { FaFacebook } from 'react-icons/fa'; // Facebook icon from FontAwesome
 import { FaPhone } from 'react-icons/fa'; // Phone icon from FontAwesome
+import { motion } from 'framer-motion'; // Import motion for animations
 
 const Contact = () => {
   return (
-    <div>
-      <Header />
-      
-      <div className="contact-container">
-        <p className="title">Contactez-nous</p>
-  
-        
-        <div className="contact-methods">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white">
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="text-3xl font-bold mb-6"
+      >
+        Contactez-nous
+      </motion.h1>
 
-          
-          <div className="contact-item">
-            <FaFacebook className="contact-icon" />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-80 bg-white p-6 rounded-lg shadow-lg"
+      >
+        <div className="flex flex-col items-center space-y-6">
 
+          {/* Facebook Contact */}
+          <div className="flex items-center space-x-4">
+            <FaFacebook className="text-blue-600 text-3xl" />
             <div>
-
-              <p className="via">Facebook <a href="https://www.facebook.com/Rucher-de-Stoqueu" target="_blank" rel="noopener noreferrer">Rucher de Stoqueu</a></p>
+              <p className="text-lg font-medium">
+                Facebook{" "}
+                <a
+                  href="https://www.facebook.com/Rucher-de-Stoqueu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  Rucher de Stoqueu
+                </a>
+              </p>
             </div>
           </div>
 
-          <div className="contact-item">
-            <FaEnvelope className="contact-icon" />
+          {/* Email Contact */}
+          <div className="flex items-center space-x-4">
+            <FaEnvelope className="text-gray-600 text-3xl" />
             <div>
-
-              <p className="via">philippeneo@gmail.com</p>
+              <p className="text-lg font-medium">philippeneo@gmail.com</p>
             </div>
           </div>
 
-          <div className="contact-item">
-            <FaPhone className="contact-icon" />
+          {/* Phone Contact */}
+          <div className="flex items-center space-x-4">
+            <FaPhone className="text-green-600 text-3xl" />
             <div>
-
-              <p className="via">0032475685201</p>
+              <p className="text-lg font-medium">0032475685201</p>
             </div>
           </div>
-
-
 
         </div>
-
-
-      </div>
-
-      <Footer />
+      </motion.div>
     </div>
   );
 };
 
 export default Contact;
+
+

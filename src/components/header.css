@@ -6,39 +6,39 @@ html, body {
   }
   
   .honey-header {
-    background-color: #f8d14e;
-    display: flex;                /* Enable Flexbox for the header */
-    justify-content: center;      /* Center horizontally */
-    text-align: center;
+    background-color: #FFC670;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1;
+
     height: 100px;
     box-sizing: border-box;       /* Ensure padding doesn't affect width */
-    align-items: center;     /* Center vertically */
-    padding: 0 360px;
+
     width: 100%;
 
   }
   
-  .honey-header .logo {
-    margin-right: 20px;           /* Optional: Add space between logo and nav */
-  }
-  
-  .logo img {
+
+  img {
     width: 100px;
     height: auto;                 /* Maintain aspect ratio */
     object-fit: contain;          /* Ensure logo stays in bounds */
   }
+
+
+
   
   /* Style for the navigation */
   .nav-list {
-    display: flex;                /* Align list items side by side */
+    display: grid;                /* Align list items side by side */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     list-style-type: none;        /* Remove bullet points */
     padding: 0;
     margin: 0;
   }
   
-  .nav-list li {
-    margin-left: 20px;            /* Add space between each link */
-  }
+ 
   
   .nav-list a {
     text-decoration: none;        /* Remove underline from links */
@@ -46,33 +46,47 @@ html, body {
     font-size: x-large;
   }
   
-  /* Optional: Remove margin from the last list item */
-  .nav-list li:last-child {
-    margin-right: 0;
+  .home {
+    padding-top: 60px;
+    cursor: pointer;
+    justify-self: center; /* Align the item to the right */
+
   }
   
-  
   .boutique {
-    padding-top: 70px;
+    padding-top: 60px;
     cursor: pointer;
+    justify-self: center; /* Align the item to the right */
 
   }
 
   .qui {
-    padding-top: 70px;
+    padding-top: 60px;
     cursor: pointer;
+    justify-self: center; /* Align the item to the right */
 
   }
 
   .contact {
-    padding-top: 70px;
+    padding-top: 60px;
     cursor: pointer;
+    justify-self: center; /* Align the item to the right */
 
   }
   
-  
 
-  
+  .panier {
+    justify-self: end; /* Align the item to the right */
+
+  }
+  .register {
+    justify-self: center; /* Align the item to the right */
+
+  }
+  .login {
+    justify-self: start;
+
+  }
 
   
   

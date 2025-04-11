@@ -1,53 +1,47 @@
-import React from 'react';
-import Header from '../components/header';  
-import Footer from '../components/footer';  
-import './login.css'; 
+import { motion } from "framer-motion";
 
-const Login = () => {
+function Login() {
   return (
-    <div>
-      <Header /> 
+    <div className="flex flex-col items-center justify-center min-h-screen bg-white"> {/* Added bg-white here */}
+      
+      <motion.h1
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="text-3xl font-bold mb-6"
+      >
+        Connexion
+      </motion.h1>
 
-      {/* Form container with max-width and padding */}
-      <div className="form-container">
-        <h2 className="form-title">Se connecter</h2>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="w-80 bg-white p-6 rounded-lg shadow-lg"
+      >
 
-        <div className="form-fields">
-          {/* Email Field */}
-          <div className="input-field">
-            <label htmlFor="email" className="input-label">Adresse email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Entrez votre email"
-              className="input"
-            />
-          </div>
+        <h2 className="text-lg mb-2">Adresse email</h2>
+        <input 
+          type="text" 
+          className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
 
-          {/* Password Field */}
-          <div className="input-field">
-            <label htmlFor="password" className="input-label">Mot de passe</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Entrez votre mot de passe"
-              className="input"
-            />
-          </div>
+        <h2 className="text-lg mt-4 mb-2">Mot de passe</h2>
+        <input 
+          type="password" 
+          className="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        />
 
-          {/* Login Button */}
-          <div className="login-button-container">
-            <button className="login-button">Se connecter</button>
-          </div>
+        <button className="w-full mt-6 p-2 bg-blue-500 text-black rounded-lg hover:bg-blue-600 transition">
+          Se connecter
+        </button>
 
-        </div>
-      </div>
-
-      <Footer /> 
+        <h2 className="text-center mt-4">
+          <a href="/register">S'inscrire</a>
+        </h2>
+      </motion.div>
     </div>
   );
-};
+}
 
 export default Login;

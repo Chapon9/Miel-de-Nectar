@@ -1,125 +1,76 @@
-import React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import './register.css'; // Import the CSS file
+import React from 'react'; 
+import { motion } from "framer-motion";
 
-const Register = () => {
+function Register() {
   return (
-    <div className="register-container">
+    <div className="flex flex-col min-h-screen">
+
+      {/* Add Header */}
       <Header />
-      <div className="form-container">
-        <p className="form-heading">S'inscrire</p>
 
-        <div className="form-fields">
-          {/* Email Field */}
-          <div className="form-field">
-            <label htmlFor="email" className="form-label">Adresse email *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Entrez votre email"
-              className="form-input"
-            />
-          </div>
+      <div className="flex-grow flex flex-col items-center justify-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-3xl font-bold mb-6"
+        >
+          Inscription
+        </motion.h1>
 
-          {/* Password Field */}
-          <div className="form-field">
-            <label htmlFor="password" className="form-label">Mot de passe *</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              placeholder="Entrez votre mot de passe"
-              className="form-input"
-            />
-          </div>
-
-          {/* Family Name Field */}
-          <div className="form-field">
-            <label htmlFor="nom" className="form-label">Nom de famille *</label>
-            <input
-              type="text"
-              id="nom"
-              name="nom"
-              placeholder="Entrez votre nom de famille"
-              className="form-input"
-            />
-          </div>
-
-          {/* First Name Field */}
-          <div className="form-field">
-            <label htmlFor="prenom" className="form-label">Prénom</label>
-            <input
-              type="text"
-              id="prenom"
-              name="prenom"
-              placeholder="Entrez votre prénom"
-              className="form-input"
-            />
-          </div>
-
-          {/* Phone Number Field */}
-          <div className="form-field">
-            <label htmlFor="telephone" className="form-label">Numéro de téléphone *</label>
-            <input
-              type="tel"
-              id="telephone"
-              name="telephone"
-              placeholder="Entrez votre numéro de téléphone"
-              className="form-input"
-            />
-          </div>
-
-          {/* Street Field */}
-          <div className="form-field">
-            <label htmlFor="rue" className="form-label">Rue + numéro *</label>
-            <input
-              type="text"
-              id="rue"
-              name="rue"
-              placeholder="Entrez votre rue + numéro"
-              className="form-input"
-            />
-          </div>
-
-          {/* Postal Code Field */}
-          <div className="form-field">
-            <label htmlFor="cp" className="form-label">Code postal *</label>
-            <input
-              type="text"
-              id="cp"
-              name="cp"
-              placeholder="Entrez votre code postal"
-              className="form-input"
-            />
-          </div>
-
-          {/* Locality Field */}
-          <div className="form-field">
-            <label htmlFor="localite" className="form-label">Localité *</label>
-            <input
-              type="text"
-              id="localite"
-              name="localite"
-              placeholder="Entrez votre localité"
-              className="form-input"
-            />
-          </div>
-
-          <p>*obligatoire</p>
-
-          {/* Google Login Section */}
-          <div className="google-login">
-          <button class="google-login-btn">
-            <span class="button-text">S'inscrire</span>
-          </button>
-          </div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="w-80 bg-white p-6 rounded-lg shadow-lg"
+        >
+          <form>
+            <div className="mb-4">
+              <label htmlFor="email" className="block text-left">Adresse email</label>
+              <input type="email" id="email" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="password" className="block text-left">Mot de passe</label>
+              <input type="password" id="password" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="password-confirm" className="block text-left">Confirmer le mot de passe</label>
+              <input type="password" id="password-confirm" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="address" className="block text-left">Adresse</label>
+              <input type="text" id="address" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="city" className="block text-left">Ville</label>
+              <input type="text" id="city" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="zip" className="block text-left">Code postal</label>
+              <input type="text" id="zip" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4">
+              <label htmlFor="phone" className="block text-left">Téléphone</label>
+              <input type="text" id="phone" className="w-full p-2 border rounded-lg" />
+            </div>
+            <div className="mb-4 flex items-center">
+              <input type="checkbox" id="conditions" className="mr-2" />
+              <label htmlFor="conditions">J'accepte les conditions d'utilisation</label>
+            </div>
+            <button className="w-full p-2 bg-blue-500 text-black rounded-lg hover:bg-blue-600 transition">
+              S'inscrire
+            </button>
+            <p className="mt-4">
+              <a href="/login" className="text-yellow-500 hover:underline">Vous avez déjà un compte ?</a>
+            </p>
+          </form>
+        </motion.div>
       </div>
+
+      {/* Add Footer */}
       <Footer />
     </div>
   );
-};
+}
 
 export default Register;

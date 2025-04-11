@@ -1,21 +1,12 @@
-/* Ensure the body and html take up full height */
-html, body {
-
-  margin: 0; /* Remove default margin */
-  width: 100%;
-}
-
-
-/* Footer style */
 .honey-footer {
-  background-color: #f8d14e;
+  background-color: #FFC670;
 
   display: grid;
   grid-template-columns: 
-    repeat(3, 1fr); /* Create 3 equal columns */
+    repeat(3, 1fr); 
  
   height: 100px;
-  width: 100%;
+
 }
 
 /* Set the logo to align to the right of the grid */

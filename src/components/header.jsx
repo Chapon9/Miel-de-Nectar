@@ -1,33 +1,43 @@
-import React from 'react';
-import './header.css'; 
-import logo from '../assets/logo.png'; 
-import { FaShoppingCart } from 'react-icons/fa'; // Import cart icon
-
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="honey-header">
-      <div className="logo">
-        <img className="red" src={logo} alt="Rucher de Stoqueu Logo" />
-      </div>
-      <nav>
-        <ul className="nav-list">
-          <li className="boutique"><a href="/boutique">Boutique</a></li>
-          <li className="qui"><a href="/info">Qui sommes-nous?</a></li>
-          <li className="contact"><a href="/contact">Contact</a></li>
-          <li className="panier"><a href="/panier">    
-          <div>
-            <FaShoppingCart size={30} color="black" /> {/* You can adjust size and color */}
-          </div></a></li>
-          <li className="register"><a href="/register">Register</a></li>
-          <li className="login"><a href="/login">Login</a></li>
-        </ul>
-      </nav>
+    <header 
+      className="header-bg h-60 flex justify-between items-start px-6 py-4"
+    >
+      <h1 className="text-xl font-bold text-black">
+  <Link to="/">
+  <img src="./src/assets/pot-accueil.svg" className="h-16"/>
+  </Link>
+</h1>
 
+<nav>
+    <ul className="flex items-center space-x-4">
+        <li>
+        <Link to="/" className="text-black">Home</Link>
+        </li>
+        <li>
+        <Link to="/Boutique" className="text-black">Boutique</Link>
+        </li>
+        <li>
+        <Link to="/Contact" className="text-black">Contact</Link>
+        </li>
+        <li>
+        <Link to="/quisommesnous" className="text-black">Qui sommes-nous</Link>
+        </li>
+    </ul>
+</nav>
+
+    <nav className="flex items-center space-x-4">
+        <Link to="/pannier">
+          <img src="./src/assets/pannier.svg" alt="Panier" className="h-6" />
+        </Link>
+        <Link to="/register" className="text-black">Inscription</Link>
+        <Link to="/login" className="text-black">Connexion</Link>
+    </nav>
     </header>
   );
 }
 
 export default Header;
-
 
