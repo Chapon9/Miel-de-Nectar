@@ -1,0 +1,104 @@
+/* General Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    background-color: #fafafa;
+  }
+  
+  /* Heading */
+  .contact-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 32px;
+    padding: 24px;
+  }
+  
+  /* Content wrapper */
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-content {
+      flex-direction: row;
+      justify-content: center;
+      gap: 100px;
+    }
+  }
+  
+  /* Left side - Contact info frame */
+
+
+  .contact-info-frame {
+    width: 600px; /* Adjust the width to make the frame bigger */
+    padding-left: 2rem; /* Adds padding to the left */
+    padding-right: 2rem; /* Adds padding to the right */
+    padding-top: 0; /* Remove padding on top */
+    padding-bottom: 0; /* Remove padding on the bottom */
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 70px; /* Apply the border radius */
+  }
+  
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  /* Contact item (Facebook, Email, Phone) */
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding-top: 0; /* Padding top for each contact item */
+    padding-bottom: 0; /* Padding bottom for each contact item */
+
+  }
+  
+  
+  .contact-icon {
+    font-size: 36px; /* Increased size of the icons */
+    padding-left: 12px;
+  }
+  
+  .contact-text {
+    font-size: 1.125rem;
+    font-weight: medium;
+    padding-left: 16px;
+  }
+  
+  .contact-link {
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  /* Google Maps Container */
+  .google-maps-container {
+    width: 100%;
+    height: 450px;
+    padding: 0;
+  }
+  
+  .google-map {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+  }
+  

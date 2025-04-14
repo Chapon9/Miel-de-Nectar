@@ -3,10 +3,11 @@ html, body {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 
+
   }
   
   .honey-header {
-    background-color: #FFC670;
+    background-color: #fb7739;
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1;

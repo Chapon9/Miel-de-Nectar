@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="text-center">
+    <div className="text-center bg-[#FAFAFA] m-0">
       <h1>Accueil</h1>
 
       {/* Animation de l'image qui se révèle de bas en haut */}
